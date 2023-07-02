@@ -1,0 +1,21 @@
+@use '../abstracts/v'
+@use '../abstracts/m'
+
+*
+  @include m.desktop
+    cursor: none !important
+
+.cursor
+  position: fixed
+  top: 0
+  left: 0
+  padding: 1px
+  display: grid
+  place-items: center
+  background-color: v.$black
+  z-index: 999
+  pointer-events: none
+  @include m.cursor()
+    display: none
+  img
+    scale: 0

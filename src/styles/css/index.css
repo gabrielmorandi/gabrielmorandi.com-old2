@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bespoke sans", sans-serif;
+  color: #1E2022;
+}
+
+body {
+  background-color: #F0F5F9;
+}
+
+.container-flex {
+  width: 90%;
+  max-width: 1180px;
+  display: flex;
+}
+.container-grid {
+  width: 90%;
+  max-width: 1180px;
+  display: grid;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pre-loader {
+  width: 100%;
+  height: 100vh;
+  background-color: #F0F5F9;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.pre-loader .container-grid {
+  place-items: center;
+  gap: 1rem;
+}
+.pre-loader .container-grid .t1 {
+  font-size: 3.5rem;
+  line-height: 100%;
+  font-family: Bespoke Stencil;
+  font-weight: 700;
+  text-align: center;
+}
+.pre-loader .container-grid .t2 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 100%;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding-block: 2rem;
+}
+@media screen and (min-width: 733px) {
+  main {
+    padding-block: 4rem;
+  }
+}
+main.hidden {
+  display: none;
+  height: 100vh;
+}
+main header {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding-block-end: 4rem;
+}
+main header .container-flex nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media screen and (min-width: 733px) {
+  main header .container-flex nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+main header .container-flex nav .logo {
+  display: flex;
+  flex-direction: column;
+}
+main header .container-flex nav .logo h1 {
+  font-size: 3.5rem;
+  line-height: 100%;
+  font-family: Bespoke Stencil;
+  font-weight: 700;
+}
+@media screen and (min-width: 733px) {
+  main header .container-flex nav .logo h1 {
+    font-size: 4rem;
+  }
+}
+main header .container-flex nav .logo h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 100%;
+}
+@media screen and (min-width: 733px) {
+  main header .container-flex nav .logo h2 {
+    font-size: 2rem;
+  }
+}
+main header .container-flex nav .lang {
+  width: min-content;
+  height: min-content;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+main header .container-flex nav .lang a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 100%;
+}
+@media screen and (min-width: 733px) {
+  main header .container-flex nav .lang a {
+    font-size: 1.5rem;
+  }
+}
+main header .container-flex nav .lang a::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 3px;
+  background-color: #C9D6DF;
+  transition: 0.2s;
+}
+main header .container-flex nav .lang:hover a::after {
+  width: calc(100% + 18px);
+}
+main header .container-flex nav .lang img {
+  padding-block-start: 0.4rem;
+  width: 100%;
+  scale: 0;
+  transition: 0.2s;
+}
+main header .container-flex nav .lang:hover > img {
+  scale: 1;
+}
+main #portfolio {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding-block-end: 4rem;
+}
+main #portfolio .container-flex {
+  gap: 2rem 1.25rem;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 733px) {
+  main #portfolio .container-flex {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main #portfolio .container-flex {
+    justify-content: flex-start;
+    gap: 2.5rem 1.25rem;
+  }
+}
+main #portfolio .container-flex .card {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: calc(1rem - 3px);
+  transition: 0.2s;
+}
+@media screen and (min-width: 733px) {
+  main #portfolio .container-flex .card {
+    max-width: 320px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main #portfolio .container-flex .card {
+    max-width: 380px;
+  }
+}
+main #portfolio .container-flex .card:hover {
+  scale: 0.95;
+}
+main #portfolio .container-flex .card:hover h2::after {
+  width: 100%;
+}
+main #portfolio .container-flex .card h2 {
+  max-width: 380px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 100%;
+}
+@media screen and (min-width: 733px) {
+  main #portfolio .container-flex .card h2 {
+    width: max-content;
+  }
+}
+main #portfolio .container-flex .card h2::after {
+  content: "";
+  display: flex;
+  width: 0;
+  height: 3px;
+  background-color: #C9D6DF;
+  margin-block-start: 0.5rem;
+  transition: 0.2s;
+}
+main #portfolio .container-flex .card img {
+  width: 100%;
+}
+main #portfolio .container-flex .card .categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+main #portfolio .container-flex .card .categories .category {
+  font-size: 1rem;
+  line-height: 100%;
+}
+main footer {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+main footer .container-flex {
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+main footer .container-flex .contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media screen and (min-width: 733px) {
+  main footer .container-flex .contact {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+main footer .container-flex .contact .cont {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main footer .container-flex .contact .cont h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 100%;
+}
+@media screen and (min-width: 733px) {
+  main footer .container-flex .contact .cont h2 {
+    font-size: 2rem;
+  }
+}
+main footer .container-flex .contact .cont .mail {
+  display: flex;
+  width: min-content;
+  height: min-content;
+  align-items: flex-start;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+main footer .container-flex .contact .cont .mail a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 100%;
+}
+@media screen and (min-width: 733px) {
+  main footer .container-flex .contact .cont .mail a {
+    font-size: 1.5rem;
+  }
+}
+main footer .container-flex .contact .cont .mail a::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 3px;
+  background-color: #C9D6DF;
+  transition: 0.2s;
+}
+main footer .container-flex .contact .cont .mail:hover a::after {
+  width: calc(100% + 18px);
+}
+main footer .container-flex .contact .cont .mail img {
+  width: 100%;
+  scale: 0;
+  transition: 0.2s;
+}
+@media screen and (min-width: 733px) {
+  main footer .container-flex .contact .cont .mail img {
+    padding-block-start: 0.4rem;
+  }
+}
+main footer .container-flex .contact .cont .mail:hover > img {
+  scale: 1;
+}
+main footer .container-flex .contact .socials {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  main footer .container-flex .contact .socials {
+    gap: 2rem;
+  }
+}
+main footer .container-flex .contact .socials a {
+  height: 36px;
+  display: flex;
+  align-items: flex-end;
+}
+main footer .container-flex .contact .socials a img {
+  transition: 0.2s;
+}
+main footer .container-flex .contact .socials a img:hover {
+  padding-block-end: 0.25rem;
+}
+main footer .container-flex .credit {
+  width: 100%;
+}
+main footer .container-flex .credit h2 {
+  width: 100%;
+  font-family: Bespoke Stencil;
+  font-size: 1.5rem;
+  line-height: 100%;
+  font-weight: 400;
+}
+@media screen and (min-width: 733px) {
+  main footer .container-flex .credit h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  * {
+    cursor: none !important;
+  }
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1px;
+  display: grid;
+  place-items: center;
+  background-color: #1E2022;
+  z-index: 999;
+  pointer-events: none;
+}
+@media screen and (max-width: 1024px) {
+  .cursor {
+    display: none;
+  }
+}
+.cursor img {
+  scale: 0;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,24 @@
+@use '../abstracts/v'
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: 'Bespoke sans', sans-serif
+  color: v.$black
+
+body
+  background-color: v.$very-light-gray
+
+.container
+  &-flex
+    width: 90%
+    max-width: 1180px
+    display: flex
+  &-grid
+    width: 90%
+    max-width: 1180px
+    display: grid
+
+a
+  text-decoration: none
