@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Bespoke sans", sans-serif;
+  font-family: "BespokeSans-Variable", sans-serif;
   color: #1E2022;
 }
 
@@ -43,7 +43,7 @@ a {
 .pre-loader .container-grid .t1 {
   font-size: 3.5rem;
   line-height: 100%;
-  font-family: Bespoke Stencil;
+  font-family: BespokeStencil-Variable;
   font-weight: 700;
   text-align: center;
 }
@@ -94,7 +94,7 @@ main header .container-flex nav .logo {
 main header .container-flex nav .logo h1 {
   font-size: 3.5rem;
   line-height: 100%;
-  font-family: Bespoke Stencil;
+  font-family: BespokeStencil-Variable;
   font-weight: 700;
 }
 @media screen and (min-width: 733px) {
@@ -340,7 +340,7 @@ main footer .container-flex .credit {
 }
 main footer .container-flex .credit h2 {
   width: 100%;
-  font-family: Bespoke Stencil;
+  font-family: BespokeStencil-Variable;
   font-size: 1.5rem;
   line-height: 100%;
   font-weight: 400;

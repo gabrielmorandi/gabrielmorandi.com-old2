@@ -6,6 +6,8 @@ import Header from "./components/Header"
 import Portfolio from "./components/Portfolio"
 import Footer from "./components/Footer"
 
+import "./assets/fonts/BespokeSans_Complete/Fonts/WEB/css/bespoke-sans.css"
+import "./assets/fonts/BespokeStencil_Complete/Fonts/WEB/css/bespoke-stencil.css"
 import "./styles/css/index.css"
 
 import ArrowUpRightCursor from "./assets/icons/arrow-up-right-cursor.svg"
