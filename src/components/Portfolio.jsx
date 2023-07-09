@@ -14,7 +14,7 @@ const Portfolio = () => {
           className="card"
         >
           <img src={DictionaryWeb} alt="Dictionary Web" />
-          <h2>Dictionary Web</h2>
+          <h2>Dicionário Web</h2>
           <div className="categories">
             <span className="category">React</span>
             <span className="category">TypeScript</span>
@@ -39,7 +39,7 @@ const Portfolio = () => {
           className="card"
         >
           <img src={ProductFeedback} alt="Product Feedback" />
-          <h2>Product Feedback</h2>
+          <h2>Feedback de Produto</h2>
           <div className="categories">
             <span className="category">Html</span>
             <span className="category">JavaScript</span>
@@ -55,7 +55,7 @@ const Portfolio = () => {
             src={TypemasterPrelaunchLandingPage}
             alt="Typemaster Pre-launch "
           />
-          <h2>Typemaster Pre-launch</h2>
+          <h2>Typemaster Pré-lançamento</h2>
           <div className="categories">
             <span className="category">Html</span>
             <span className="category">Sass</span>
