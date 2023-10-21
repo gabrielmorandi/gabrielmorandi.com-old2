@@ -4,6 +4,9 @@ import DictionaryWeb from "../../src/assets/imgs/Dictionary Web.png"
 import DesignoWebsite from "../../src/assets/imgs/Designo Website.png"
 import ProductFeedback from "../../src/assets/imgs/Product Feedback.png"
 import TypemasterPrelaunchLandingPage from "../../src/assets/imgs/Typemaster Pre-launch Landing Page.png"
+import Cofferroasters from "../../src/assets/imgs/Coffeeroasters.jpg"
+
+import ArrowUpRight from "../../src/assets/icons/arrow-up-right.svg"
 
 const Portfolio = () => {
   return (
@@ -58,6 +61,14 @@ const Portfolio = () => {
           <h2>Typemaster Pré-lançamento</h2>
           <div className="categories">
             <span className="category">Html</span>
+            <span className="category">Sass</span>
+          </div>
+        </a>
+        <a href="https://cofeeroasters-morandi.netlify.app/" className="card">
+          <img src={Cofferroasters} alt="Coffeeroasters subscription" />
+          <h2>Coffeeroasters Website</h2>
+          <div className="categories">
+            <span className="category">Next.js</span>
             <span className="category">Sass</span>
           </div>
         </a>
