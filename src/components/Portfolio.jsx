@@ -6,8 +6,6 @@ import ProductFeedback from "../../src/assets/imgs/Product Feedback.png"
 import TypemasterPrelaunchLandingPage from "../../src/assets/imgs/Typemaster Pre-launch Landing Page.png"
 import Cofferroasters from "../../src/assets/imgs/Coffeeroasters.jpg"
 
-import ArrowUpRight from "../../src/assets/icons/arrow-up-right.svg"
-
 const Portfolio = () => {
   return (
     <section id="portfolio">
